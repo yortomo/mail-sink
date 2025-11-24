@@ -3,7 +3,7 @@ name: Unit Test
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 env:
   GO_VERSION: 1.25
