@@ -41,3 +41,11 @@ Usage:
 ```bash
 go get github.com/yortomo/mail-sink
 ```
+
+### Container
+
+From Github package
+
+```text
+ghcr.io/yortomo/mail-sink:latest
+```
