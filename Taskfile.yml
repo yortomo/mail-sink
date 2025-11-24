@@ -1,0 +1,16 @@
+version: '3'
+
+vars:
+  BIN_OUTPUT: mail-sink
+
+tasks:
+  test:
+    cmds:
+      - go test -v .
+
+  build-static:
+    cmds:
+      -  |
+        CGO_ENABLED=0 go build \
+        -ldflags '-w -extldflags "-static"' \
+        -o {{.BIN_OUTPUT}}
