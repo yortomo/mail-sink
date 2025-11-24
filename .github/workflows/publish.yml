@@ -28,4 +28,4 @@ jobs:
         with:
           version: v0.18.0
 
-      - run: ko build --tags=${GITHUB_REF_NAME}
+      - run: ko build --tags=${GITHUB_REF_NAME} --bare
